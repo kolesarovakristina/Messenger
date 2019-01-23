@@ -15,7 +15,7 @@ dipslay:flex;
 flex-direction: row;
 `;
 export const StyledButtonWrapper = styled.div`
-padding-top: 250px;
+padding-top: 10px;
 display: flex;
 width:100%;
 `;
@@ -77,7 +77,23 @@ background: #505050;
   border-bottom: 1px solid #f76f39;
 }
 `;
-export const TextArea = styled.p`
+export const TextArea = styled.input`
+transition: all 0.2s linear;
+width: 100%;
+display: inline-block;
+height: 80px;
+font-size: 15px;
+border: 0;
+outline: none;
+display: block;
+border-radius:5px;
+text-indent: 10px;
+color:#999;
+background: #505050;
+&:focus {
+  border-bottom: 1px solid #f76f39;
+}`;
+export const Paragraph = styled.p`
 transition: all 0.2s linear;
 width: 100%;
 display: inline-block;
